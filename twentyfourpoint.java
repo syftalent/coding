@@ -27,6 +27,13 @@ public class Main {
 					nums.remove(nums.size() - 1);
 				}
 
+				nums.add(num2 - num1);
+				if(twentyfour(nums, target)){
+					return true;
+				}else{
+					nums.remove(nums.size() - 1);
+				}
+
 				//*
 				nums.add(num1 * num2);
 				if(twentyfour(nums, target)){
